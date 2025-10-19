@@ -24,6 +24,13 @@
   }
 })();
 
+// audio
+
+var audio = new Audio(
+  "https://github.com/akishajae/akishajae.github.io/raw/refs/heads/main/assets/bgm/piano-for-spring-loop-348840.mp3?raw=true"
+);
+audio.play();
+
 const container = document.getElementById("constellation");
 const starCount = 9;
 
@@ -125,125 +132,3 @@ document.getElementById("star-9").addEventListener("click", function () {
   var span = document.getElementsByClassName("close")[8];
   displayModal(modal, span, 8);
 });
-
-// document.getElementById("star-6").addEventListener("click", function () {
-//   var modal = document.getElementById("star6-modal");
-//   var span = document.getElementsByClassName("close")[4];
-//   displayModal(modal, span, 2);
-// });
-
-//     // Create pop-up
-//     const popup = document.createElement("div");
-//     popup.className = "popup";
-//     const starContent = {
-//       "star-1": {
-//         title: "This is Star 1",
-//         quote: "quote",
-//         image: "",
-//         text: "Description for Star 1",
-//       },
-//       "star-2": {
-//         title: "This is Star 2",
-//         quote: "quote",
-//         image: "path/to/image2.jpg",
-//         text: "Description for Star 1",
-//       },
-//       "star-3": {
-//         title: "This is Star 3",
-//         quote: "quote",
-//         image: "assets/elements/gramophone.png",
-//         text: "Description for Star 1",
-//       },
-//       "star-4": {
-//         title: "This is Star 4",
-//         quote: "quote",
-//         // to make the image smaller
-//         image: "assets/elements/marigold.svg",
-//         text: "Description for Star 1",
-//       },
-//       "star-5": {
-//         title: "This is Star 5",
-//         quote: "quote",
-//         image: "path/to/image5.jpg",
-//         text: "Description for Star 1",
-//       },
-//       "star-6": {
-//         title: "This is Star 6",
-//         quote: "quote",
-//         image: "path/to/image6.jpg",
-//         text: "Description for Star 1",
-//       },
-//       "star-7": {
-//         title: "This is Star 7",
-//         quote: "quote",
-//         image: "path/to/image7.jpg",
-//         text: "Description for Star 1",
-//       },
-//       "star-8": {
-//         title: "This is Star 8",
-//         quote: "quote",
-//         image: "path/to/image8.jpg",
-//         text: "Description for Star 1",
-//       },
-//       "star-9": {
-//         title: "This is Star 9",
-//         quote: "quote",
-//         image: "path/to/image9.jpg",
-//         text: "Description for Star 1",
-//       },
-//     };
-
-//     const content = starContent[star.id];
-
-//     popup.innerHTML = `<div style="display: flex; flex-direction: column; gap: 20px; align-items: center; height: 100%;">
-//       <div style="flex: 0; color: #ebe4e4ff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-//         <h1 class="text-5xl">${content.title}</h1>
-//       </div>
-//       <div style="flex: 1; display: flex; gap: 20px; width: 100%;">
-//         <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
-//           <img src="${content.image}" style="max-width: 100%; max-height: 100%; border-radius: 10px;">
-//         </div>
-//         <div style="flex: 1; color: #ebe4e4ff;">
-//           <h2>${content.quote}</h2>
-//           <p>${content.text}</p>
-//         </div>
-//       </div>
-//     </div>`;
-
-//     // Styles
-//     popup.style.position = "absolute";
-//     popup.style.top = "50%";
-//     popup.style.left = "50%";
-//     popup.style.transform = "translate(-50%, -50%)";
-//     popup.style.padding = "20px";
-//     popup.style.backgroundColor = "#014e57ff";
-//     popup.style.color = "#ebe4e4ff";
-//     popup.style.borderRadius = "20px";
-//     popup.style.opacity = "0";
-//     popup.style.transition = "opacity 0.3s ease";
-//     popup.style.width = "60%";
-//     popup.style.height = "80%";
-
-//     document.body.appendChild(popup);
-
-//     // Animation
-//     setTimeout(() => {
-//       popup.style.opacity = "1";
-//     }, 0);
-
-//     // Close pop-up
-//     const closePopup = () => {
-//       if (!popup.contains(event.target)) {
-//         popup.style.opacity = "0";
-//         setTimeout(() => {
-//           popup.remove();
-//         }, 300);
-//         document.removeEventListener("click", closePopup);
-//       }
-//     };
-
-//     setTimeout(() => {
-//       document.addEventListener("click", closePopup);
-//     }, 0);
-//   });
-// });
