@@ -26,10 +26,10 @@
 
 // audio
 
-var audio = new Audio(
-  "https://github.com/akishajae/akishajae.github.io/raw/refs/heads/main/assets/bgm/piano-for-spring-loop-348840.mp3?raw=true"
-);
-audio.play();
+// var audio = new Audio(
+//   "https://github.com/akishajae/akishajae.github.io/raw/refs/heads/main/assets/bgm/piano-for-spring-loop-348840.mp3?raw=true"
+// );
+// audio.play();
 
 const container = document.getElementById("constellation");
 const starCount = 9;
