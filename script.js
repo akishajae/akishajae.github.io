@@ -1,3 +1,9 @@
+// CREDITS
+
+// Modal animation inspired by onza's CodePen: https://codepen.io/onza/pen/LYNPbqP
+// License: MIT
+
+
 (function () {
   // Event listener
   document.addEventListener("mousemove", parallax);
